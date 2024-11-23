@@ -1,4 +1,4 @@
-import entities.Banco;
+import entidades.Banco;
 
 import java.util.Locale;
 import java.util.Scanner;
