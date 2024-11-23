@@ -23,7 +23,7 @@ public class Banco {
     public void  setNome(String nome) {
         this.nome = nome;
     }
-    public double getMunConta() {
+    public int getMunConta() {
         return numConta;
     }
 
