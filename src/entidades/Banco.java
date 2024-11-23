@@ -6,7 +6,6 @@ public class Banco {
     private double saldo;
     private  int numConta;
     //CONSTRUTORES.
-
     public Banco(double saldo) {
         this.saldo = saldo;
     }

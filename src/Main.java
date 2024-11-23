@@ -15,7 +15,8 @@ public class Main {
         numConta = sc.nextInt();
         System.out.print("Informe o nome do titular da conta: ");
         sc.nextLine();//Usado para queimar a quebra de linha.
-        nome = sc.nextLine();
+        nome = sc.next();
+        sc.nextLine();
         System.out.println("Irá efetuar algum deposito (s/n)?: ");
         char response = sc.nextLine().charAt(0);
         if (response == 's') {
@@ -38,10 +39,10 @@ public class Main {
         System.out.println();
         System.out.print("valor de saque: ");
         double saq = sc.nextDouble();
-        bc.saque(saq);
         if (saq > saldo) {
             System.out.println("Saldo insuficiente para operação.");
-        }else {
+        } else {
+            bc.saque(saq);
             System.out.println("conta:");
             System.out.println(bc.toString());
         }
