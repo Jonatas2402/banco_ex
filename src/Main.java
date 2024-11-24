@@ -18,8 +18,8 @@ public class Main {
         nome = sc.next();
         sc.nextLine();
         System.out.println("Irá efetuar algum deposito (s/n)?: ");
-        char response = sc.nextLine().charAt(0);
-        if (response == 's') {
+        String response = sc.nextLine();
+        if (response.equals('s')) {
             System.out.print("Qual valor irá depositar: ");
             saldo = sc.nextDouble();
             Banco bc = new Banco(saldo);
